@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cr0ckhysohric"
+path="res://.godot/imported/capibara_intro.dialogue-a89fb21bcc1ed5b14650e0eb73fca8f8.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Capibara/0_Capibara_intro/capibara_intro_components/capibara_intro.dialogue"
+dest_files=["res://.godot/imported/capibara_intro.dialogue-a89fb21bcc1ed5b14650e0eb73fca8f8.tres"]
+
+[params]
+
+defaults=true

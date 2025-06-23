@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+En el corazón del Pueblo Crochet, dos tiendas compiten por el liderazgo del mercado local.
+El Sr. Crochet le cuenta a Kapy que el malvado Mr. Chen, dueño de Plastimoda, junto a sus secuaces, arruinó toda su ropa para el concurso.
+El Señor Crochet explica la gravedad del sabotaje y la necesidad de participar en el concurso para salvar el negocio.
+Decidido, Kapy jura cumplir su misión y proteger el negocio familiar.
+do animation_player.play(&"walk_off")
+Explore other elements to mod, like the placeholder image, tile map, and animation options for this scene!
+=> END
