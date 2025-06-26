@@ -1,0 +1,88 @@
+[gd_scene load_steps=11 format=3 uid="uid://cp6tflvd4xo3q"]
+
+[ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="1_wyddm"]
+[ext_resource type="Script" uid="uid://dr4vsurivc213" path="res://scenes/capybara/look_ray.gd" id="2_agchy"]
+[ext_resource type="Texture2D" uid="uid://8t6ihmesvghq" path="res://scenes/game_elements/characters/enemies/guard/components/field_of_view.png" id="3_60mxu"]
+[ext_resource type="Script" uid="uid://bu0w66u1rauly" path="res://scenes/capybara/look_monster.gd" id="4_bhlbt"]
+[ext_resource type="Texture2D" uid="uid://bhqanyxhpxpm" path="res://assets/first_party/rocks/Rock_Idle.png" id="5_67f4s"]
+[ext_resource type="Script" uid="uid://cdk5s23ofng74" path="res://scenes/capybara/look_area.gd" id="6_8ofhw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nd71p"]
+radius = 32.0624
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j8ivh"]
+radius = 62.3939
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_3qnke"]
+polygon = PackedVector2Array(-1, -23, -21, -14, -28, 3, -22, 13, -12, 17, 1, 23, 23, 9, 25, -6)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_3qnke"]
+vertices = PackedVector2Array(673.023, -15.0234, 673.969, 381.047, 7, 384.938, 7, -16.9688)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-3, -27, -3, 395, 684, 391, 683, -25)])
+
+[node name="TestScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_wyddm")]
+position = Vector2(190, 196)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+process_mode = 3
+zoom = Vector2(1.7, 1.7)
+limit_left = 0
+limit_top = 0
+position_smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="lookRay" type="RayCast2D" parent="Player"]
+position = Vector2(6, -16)
+rotation = -1.5708
+scale = Vector2(4.9, 1.89)
+collision_mask = 64
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+script = ExtResource("2_agchy")
+
+[node name="PointLight2D" type="PointLight2D" parent="Player/lookRay"]
+position = Vector2(0.121052, 30.5583)
+rotation = 1.5708
+scale = Vector2(0.0564064, 0.0233355)
+energy = 4.81
+shadow_enabled = true
+texture = ExtResource("3_60mxu")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0.32032, 0.0748309, 0.107777, 1)
+metadata/_edit_lock_ = true
+
+[node name="lookMonster" type="CharacterBody2D" parent="."]
+position = Vector2(486, 167)
+script = ExtResource("4_bhlbt")
+
+[node name="Sprite2D" type="Sprite2D" parent="lookMonster"]
+texture_filter = 1
+texture = ExtResource("5_67f4s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lookMonster"]
+position = Vector2(-2, 0)
+shape = SubResource("CircleShape2D_nd71p")
+
+[node name="lookArea" type="Area2D" parent="lookMonster"]
+collision_layer = 64
+collision_mask = 64
+script = ExtResource("6_8ofhw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lookMonster/lookArea"]
+shape = SubResource("CircleShape2D_j8ivh")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="lookMonster"]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="lookMonster"]
+occluder = SubResource("OccluderPolygon2D_3qnke")
+sdf_collision = false
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_3qnke")
+metadata/_edit_lock_ = true
