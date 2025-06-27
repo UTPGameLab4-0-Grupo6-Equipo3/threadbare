@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0myt1akhths2"
-path="res://.godot/imported/template_Replace image.png-320007943a5c4021cb1ea7e8a5aba6fc.ctex"
+uid="uid://crhmko1alc6ri"
+path="res://.godot/imported/sprites2.png-7865a321b8603251101e1f2d600c79f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/Capibara/0_Capibara_intro/template_intro_components/template_Replace image.png"
-dest_files=["res://.godot/imported/template_Replace image.png-320007943a5c4021cb1ea7e8a5aba6fc.ctex"]
+source_file="res://sprites2.png"
+dest_files=["res://.godot/imported/sprites2.png-7865a321b8603251101e1f2d600c79f7.ctex"]
 
 [params]
 

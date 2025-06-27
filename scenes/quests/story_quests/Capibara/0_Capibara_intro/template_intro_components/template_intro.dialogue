@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+En el Pueblo Crochet, el capibara Kapy descubre que el astuto Mr. Chen, dueño de Plastimoda, ha saboteado la ropa del taller familiar justo antes del gran concurso de modas.
+Sin tiempo que perder, Kapy debe recolectar tres ovillos mágicos de lana para crear un diseño espectacular y representar con orgullo al taller.
+¡Ayuda a Kapy a vencer a Mr. Chen y salvar el legado familiar!
+do animation_player.play(&"walk_off")
+Pero cuidado: los polímeros de Mr. Chen harán todo lo posible por detenerlo. 
+=> END
