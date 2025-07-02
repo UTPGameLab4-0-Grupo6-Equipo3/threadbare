@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3dqlwuctkg0p"
-path="res://.godot/imported/template_projectile.png-d8f3f203e4bde57676c1fb1c4749b684.ctex"
+uid="uid://w286c653efln"
+path="res://.godot/imported/sprites_poly2.png-7b96c2bf05b4db78b01d6a9d92ecb3e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/Capibara/2_Capibara_combat/template_combat_components/template_projectile.png"
-dest_files=["res://.godot/imported/template_projectile.png-d8f3f203e4bde57676c1fb1c4749b684.ctex"]
+source_file="res://scenes/quests/story_quests/Capibara/sprites_poly2.png"
+dest_files=["res://.godot/imported/sprites_poly2.png-7b96c2bf05b4db78b01d6a9d92ecb3e1.ctex"]
 
 [params]
 

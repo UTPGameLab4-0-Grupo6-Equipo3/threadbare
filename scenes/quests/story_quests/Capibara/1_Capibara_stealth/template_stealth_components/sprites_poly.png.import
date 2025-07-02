@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwqfghln3i0n4"
-path="res://.godot/imported/k1 (1).png-274ebad0caffa70b76c845e73ee0457c.ctex"
+uid="uid://bse5tcbr61x21"
+path="res://.godot/imported/sprites_poly.png-98cf8185572bf81ab4717064aa004abb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://k1 (1).png"
-dest_files=["res://.godot/imported/k1 (1).png-274ebad0caffa70b76c845e73ee0457c.ctex"]
+source_file="res://scenes/quests/story_quests/Capibara/1_Capibara_stealth/template_stealth_components/sprites_poly.png"
+dest_files=["res://.godot/imported/sprites_poly.png-98cf8185572bf81ab4717064aa004abb.ctex"]
 
 [params]
 
