@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 ~ start
-Something in this scene will throw projectiles at you. The goal is to redirect them toward the targets.
-Explore the Scene Tree to add, change, or remove elements.
+Oh no! El ovillo amarillo está protegido por el guardia jefe, debo vencerlo de alguna manera.
+¿Pero cómo? No tengo idea, debe de haber alguna manera de utilizar sus ataques en su contra...
 => END
 
 ~ well_done
-You can add text here after the player takes the collectible. Be creative with this one!
+Excelente, ya tengo dos de tres ovillos. Necesito el tercero y el negocio familiar estará a salvo!
 => END

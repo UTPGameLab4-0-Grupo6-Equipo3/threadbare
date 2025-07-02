@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c67t56qihodte"
+path="res://.godot/imported/capibara_stealth.dialogue-4d87f5c51fe4cdb340ffe306ba86d67c.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Capibara/1_Capibara_stealth/template_stealth_components/capibara_stealth.dialogue"
+dest_files=["res://.godot/imported/capibara_stealth.dialogue-4d87f5c51fe4cdb340ffe306ba86d67c.tres"]
+
+[params]
+
+defaults=true
