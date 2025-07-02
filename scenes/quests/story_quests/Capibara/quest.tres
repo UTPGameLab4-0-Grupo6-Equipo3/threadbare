@@ -4,10 +4,11 @@
 
 [resource]
 script = ExtResource("1_xxb21")
-title = ""
-description = ""
+title = "El Capibara y Los Ovillos de Lana"
+description = "Un capibara  sastre estaba decidido a terminar sus vestidos para el gran concurso, a pesar de carecer de tiempo y materiales. Su determinación era tan fuerte que conmovió a un misterioso viajero, quien le obsequió una máquina telar y le reveló el secreto para triunfar: la legendaria lana mágica.
+Para conseguirla, el capibara deberá enfrentarse a desafiantes pruebas, guiado por su voluntad inquebrantable y el sueño de triunfar."
 authors = Array[String]([])
 affiliation = ""
-first_scene = "uid://c1gdct760l86h"
+first_scene = "uid://bp64pp4wsbsib"
 animation_name = &""
 metadata/_custom_type_script = "uid://dts1hwdy3phin"

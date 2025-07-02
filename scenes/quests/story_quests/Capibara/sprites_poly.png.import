@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpy7bsw1kf3d6"
-path="res://.godot/imported/k1 (2).png-9cfbf508066a5257c8a5547cb3c17ee9.ctex"
+uid="uid://bwm7u0unaisuc"
+path="res://.godot/imported/sprites_poly.png-d5a27463144fcce31b862c69d2f1ffda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://k1 (2).png"
-dest_files=["res://.godot/imported/k1 (2).png-9cfbf508066a5257c8a5547cb3c17ee9.ctex"]
+source_file="res://scenes/quests/story_quests/Capibara/sprites_poly.png"
+dest_files=["res://.godot/imported/sprites_poly.png-d5a27463144fcce31b862c69d2f1ffda.ctex"]
 
 [params]
 
