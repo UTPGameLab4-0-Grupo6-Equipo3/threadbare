@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d0wxexwy0kuex"
+path="res://.godot/imported/collected_running.dialogue-68afed0bf69249c5f29f5043298f8257.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Capibara/3_Capibara_Running/collected_running.dialogue"
+dest_files=["res://.godot/imported/collected_running.dialogue-68afed0bf69249c5f29f5043298f8257.tres"]
+
+[params]
+
+defaults=true

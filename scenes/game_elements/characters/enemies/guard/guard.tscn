@@ -199,6 +199,7 @@ collision_layer = 0
 position = Vector2(37.3333, 1.33333)
 scale = Vector2(0.340496, 0.340496)
 color = Color(1, 1, 0.796078, 1)
+energy = 0.99
 blend_mode = 2
 shadow_enabled = true
 shadow_filter = 1
@@ -217,6 +218,7 @@ position = Vector2(0, -16)
 sprite_frames = ExtResource("5_mswbt")
 animation = &"idle"
 autoplay = "idle"
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_nv25s")

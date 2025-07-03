@@ -56,7 +56,7 @@ script = ExtResource("1_s7v38")
 zoom = 1.7
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.481789, 0.48179, 0.481789, 1)
+color = Color(0.32544, 0.325441, 0.32544, 1)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -155,7 +155,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="CollectibleItem" parent="." instance=ExtResource("8_ejnt4")]
 position = Vector2(2431, 1476)
-next_scene = "uid://thwcu5akkqp5"
+next_scene = "uid://blxcos6tag4i7"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("10_fwknu")
 

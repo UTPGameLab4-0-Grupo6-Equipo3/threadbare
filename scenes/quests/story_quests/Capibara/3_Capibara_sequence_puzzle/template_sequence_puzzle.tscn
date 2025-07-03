@@ -1,12 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://dh47vgg3d5coj"]
+[gd_scene load_steps=10 format=4 uid="uid://dh47vgg3d5coj"]
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_4eqjj"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_2hgcn"]
-[ext_resource type="Script" uid="uid://c68oh8dtr21ti" path="res://scenes/game_logic/sequence_puzzle.gd" id="3_mwave"]
-[ext_resource type="PackedScene" uid="uid://b8sok264erfoc" path="res://scenes/game_elements/props/sequence_puzzle_object/sequence_puzzle_object.tscn" id="4_rn2a7"]
-[ext_resource type="PackedScene" uid="uid://be4o3ythda4cu" path="res://scenes/game_elements/props/sequence_puzzle_hint_sign/sequence_puzzle_hint_sign.tscn" id="5_8bfe6"]
-[ext_resource type="SpriteFrames" uid="uid://bhcgkxhy4cqf4" path="res://scenes/quests/story_quests/template/3_template_sequence_puzzle/template_sign_2.tres" id="6_81xiu"]
-[ext_resource type="Script" uid="uid://ccc78coj2b1li" path="res://scenes/game_logic/sequence_puzzle_step.gd" id="7_67m8g"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_72y07"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_vjc4p"]
 [ext_resource type="Resource" uid="uid://bb1g8ftnxjhvh" path="res://scenes/quests/story_quests/template/3_template_sequence_puzzle/template_sequence_puzzle.dialogue" id="10_ldu7m"]
@@ -38,65 +33,8 @@ y_sort_enabled = true
 [node name="Player" parent="OnTheGround" instance=ExtResource("2_2hgcn")]
 position = Vector2(383, 371)
 
-[node name="SequencePuzzle" type="Node2D" parent="OnTheGround" node_paths=PackedStringArray("steps")]
-y_sort_enabled = true
-position = Vector2(-1, 0)
-script = ExtResource("3_mwave")
-steps = [NodePath("Steps/SequencePuzzleStep1"), NodePath("Steps/SequencePuzzleStep2")]
-metadata/_custom_type_script = "uid://c68oh8dtr21ti"
-
-[node name="Objects" type="Node2D" parent="OnTheGround/SequencePuzzle"]
-y_sort_enabled = true
-position = Vector2(356, 453)
-
-[node name="Blue" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_rn2a7")]
-modulate = Color(0, 0.4, 0.6, 1)
-
-[node name="Pink" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_rn2a7")]
-modulate = Color(0.89, 0.2937, 0.804817, 1)
-position = Vector2(80, -8)
-
-[node name="Yellow" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_rn2a7")]
-modulate = Color(0.89, 0.804817, 0.2937, 1)
-position = Vector2(160, -16)
-
-[node name="Green" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_rn2a7")]
-modulate = Color(0.188235, 0.717647, 0, 1)
-position = Vector2(240, -24)
-
-[node name="Purple" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_rn2a7")]
-modulate = Color(0.464066, 0.2937, 0.89, 1)
-position = Vector2(320, -32)
-
-[node name="Red" parent="OnTheGround/SequencePuzzle/Objects" instance=ExtResource("4_rn2a7")]
-modulate = Color(0.89, 0.2937, 0.2937, 1)
-position = Vector2(400, -40)
-
-[node name="Signs" type="Node2D" parent="OnTheGround/SequencePuzzle"]
-y_sort_enabled = true
-
-[node name="HintSign1" parent="OnTheGround/SequencePuzzle/Signs" instance=ExtResource("5_8bfe6")]
-position = Vector2(506, 210)
-
-[node name="HintSign2" parent="OnTheGround/SequencePuzzle/Signs" instance=ExtResource("5_8bfe6")]
-position = Vector2(593, 200)
-sprite_frames = ExtResource("6_81xiu")
-
-[node name="Steps" type="Node2D" parent="OnTheGround/SequencePuzzle"]
-
-[node name="SequencePuzzleStep1" type="Node2D" parent="OnTheGround/SequencePuzzle/Steps" node_paths=PackedStringArray("sequence", "hint_sign")]
-script = ExtResource("7_67m8g")
-sequence = [NodePath("../../Objects/Yellow"), NodePath("../../Objects/Green"), NodePath("../../Objects/Blue")]
-hint_sign = NodePath("../../Signs/HintSign1")
-
-[node name="SequencePuzzleStep2" type="Node2D" parent="OnTheGround/SequencePuzzle/Steps" node_paths=PackedStringArray("sequence", "hint_sign")]
-script = ExtResource("7_67m8g")
-sequence = [NodePath("../../Objects/Blue"), NodePath("../../Objects/Green"), NodePath("../../Objects/Yellow"), NodePath("../../Objects/Green")]
-hint_sign = NodePath("../../Signs/HintSign2")
-
 [node name="CollectibleItem" parent="OnTheGround" instance=ExtResource("8_72y07")]
-position = Vector2(861, 282)
-revealed = false
+position = Vector2(892, 281)
 next_scene = "uid://3yn1dx48533x"
 item = SubResource("Resource_u8qfb")
 collected_dialogue = ExtResource("10_ldu7m")
@@ -120,5 +58,3 @@ position_smoothing_enabled = true
 script = ExtResource("13_u6sbu")
 dialogue = ExtResource("10_ldu7m")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
-
-[connection signal="solved" from="OnTheGround/SequencePuzzle" to="OnTheGround/CollectibleItem" method="reveal"]

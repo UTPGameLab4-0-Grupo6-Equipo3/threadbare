@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://blxcos6tag4i7"]
+[gd_scene load_steps=14 format=4 uid="uid://blxcos6tag4i7"]
 
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_lgbhg"]
 [ext_resource type="Resource" uid="uid://daxue3h5wglvt" path="res://scenes/quests/story_quests/Capibara/2_Capibara_combat/template_combat_components/template_combat.dialogue" id="2_e2gv8"]
-[ext_resource type="Resource" uid="uid://3vrn5jdxov37" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_combat.dialogue" id="2_xaf6r"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="3_s3inf"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="4_x1odk"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="5_cgknu"]
@@ -91,9 +90,9 @@ color = Color(1, 1, 1, 1)
 unique_name_in_owner = true
 position = Vector2(868, 303)
 revealed = false
-next_scene = "uid://dh47vgg3d5coj"
+next_scene = "uid://dubv7flfrc3ym"
 item = SubResource("Resource_a51xm")
-collected_dialogue = ExtResource("2_xaf6r")
+collected_dialogue = ExtResource("2_e2gv8")
 dialogue_title = &"well_done"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
